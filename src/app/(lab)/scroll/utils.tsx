@@ -1,6 +1,6 @@
 import * as THREE from "three";
 
-export const GenerateInitMaterials = (colorsMaterial) => {
+export const GenerateInitMaterials = () => {
   const falloutBoyTexture = new THREE.TextureLoader().load(
     "/assets/scroll/FalloutBoy.png"
   );
