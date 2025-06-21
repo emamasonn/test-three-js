@@ -53,7 +53,7 @@ export default function Label() {
             <div>
               <ul>
                 {card.points.map((point, index) => {
-                  if (index === card.points.lenght) {
+                  if (index === card.points.length) {
                     return (
                       <li key={index} className="text_item_des">
                         <p className="text_body text_item_des text_item_des_border_top text_item_des_border_bottom">

@@ -36,7 +36,7 @@ export const Bottle = (props: JSX.IntrinsicElements["group"]) => {
   const scroll = useScroll();
 
   const { cristalMaterial, sodaMaterial, brandMaterial } =
-    GenerateInitMaterials(colorsMaterial);
+    GenerateInitMaterials();
 
   const { nodes } = useGLTF(
     "/assets/scroll/Bottle.glb"
@@ -59,11 +59,13 @@ export const Bottle = (props: JSX.IntrinsicElements["group"]) => {
     );
     console.log("animations", animations);
     animations.map((animation) => {
-      timeline.to(
-        animation.target,
-        { ...animation.animationsProperties },
-        animation.pointTime
-      );
+      if (animation.target) {
+        timeline.to(
+          animation.target,
+          { ...animation.animationsProperties },
+          animation.pointTime
+        );
+      }
     });
   }, [
     brandMaterial,

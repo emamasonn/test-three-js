@@ -61,7 +61,7 @@ export const LoadAnimations = (
   const Animations = [
     // Init Animations - Page 0
     {
-      target: scene.getObjectByName("BottleGroup").position,
+      target: scene.getObjectByName("BottleGroup")?.position,
       pointTime: 0,
       animationsProperties: {
         x: 0,
@@ -69,7 +69,7 @@ export const LoadAnimations = (
       },
     },
     {
-      target: scene.getObjectByName("BottleGroup").rotation,
+      target: scene.getObjectByName("BottleGroup")?.rotation,
       pointTime: 0,
       animationsProperties: {
         y: 0,
@@ -115,7 +115,7 @@ export const LoadAnimations = (
 
     // Nuka Cola - Page 1
     {
-      target: scene.getObjectByName("BottleGroup").position,
+      target: scene.getObjectByName("BottleGroup")?.position,
       pointTime: 2,
       animationsProperties: {
         x: 1,
@@ -123,7 +123,7 @@ export const LoadAnimations = (
       },
     },
     {
-      target: scene.getObjectByName("BottleGroup").rotation,
+      target: scene.getObjectByName("BottleGroup")?.rotation,
       pointTime: 2,
       animationsProperties: {
         y: Math.PI * 2,
@@ -177,7 +177,7 @@ export const LoadAnimations = (
     },
     //   Quantum Cola - Page 2
     {
-      target: scene.getObjectByName("BottleGroup").position,
+      target: scene.getObjectByName("BottleGroup")?.position,
       pointTime: 4,
       animationsProperties: {
         x: -1,
@@ -185,7 +185,7 @@ export const LoadAnimations = (
       },
     },
     {
-      target: scene.getObjectByName("BottleGroup").rotation,
+      target: scene.getObjectByName("BottleGroup")?.rotation,
       pointTime: 4,
       animationsProperties: {
         y: -Math.PI * 2,
@@ -249,7 +249,7 @@ export const LoadAnimations = (
     },
     // Sunset Sarsaparrilla - Page 3
     {
-      target: scene.getObjectByName("BottleGroup").position,
+      target: scene.getObjectByName("BottleGroup")?.position,
       pointTime: 6,
       animationsProperties: {
         x: 1,
@@ -257,7 +257,7 @@ export const LoadAnimations = (
       },
     },
     {
-      target: scene.getObjectByName("BottleGroup").rotation,
+      target: scene.getObjectByName("BottleGroup")?.rotation,
       pointTime: 6,
       animationsProperties: {
         y: Math.PI * 2,
